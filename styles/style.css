@@ -1,3 +1,17 @@
 /* body {
     background-color:#202023;
 } */
+* {
+    box-sizing: border-box;
+    flex-wrap: wrap;
+}
+ul, h1, h2, h3, h4, p, button, ol, iframe, a {
+    margin: 0;
+    padding: 0;
+}
+a {
+    text-decoration: none;
+}
+ul {
+    list-style-type: none;
+}
