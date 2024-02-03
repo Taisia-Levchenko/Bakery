@@ -4,8 +4,6 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Bakery</title>
-    <link rel="stylesheet" href="./styles/style.css" />
-
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
@@ -17,20 +15,22 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;700;800;900&family=Italiana&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="./styles/style.css" />
   </head>
   <body class="body">
+    <header class="header">
+          <nav class="navigation">
+            <ul class="navigation-list">
+            <li class="navigation-list_item"><a href="#">About us</a></li>
+            <li class="navigation-list_item"><a href="#">Delivery</a></li>
+            <li class="navigation-list_item"><a href="#">Menu</a></li>
+            <li class="navigation-list_item"><a href="#">Contacts</a></li>
+            <li class="navigation-list_item"><a href="#">Reviews</a></li>
+          </ul>
+          </nav>
+        </header>
     <main class="main">
       <section class="hero">
-        <header class="navigation">
-          <ul class="navigation-list">
-            <li class="navigation-list_item">About us</li>
-            <li class="navigation-list_item">Delivery</li>
-            <li class="navigation-list_item">Menu</li>
-            <li class="navigation-list_item">Contacts</li>
-            <li class="navigation-list_item">Reviews</li>
-          </ul>
-        </header>
-
         <h1 class="hero-heading">TRADITIONAL ARTISAX BAKERY</h1>
         <p class="hero-text">
           Lorem Ipsum is simply dummy text of the printing and typesetting
@@ -43,19 +43,19 @@
         <button type="button" class="hero-button">SHOP NOW</button>
         <ul class="hero-list">
           <li class="hero-list_item">
-            <img src="./images/hero-cookie.jpg" alt="cookie">
+            <!-- <img src="./images/hero-cookie.png" alt="cookie"> - background-->
             <h4 class="hero-list_h4">$8.00(kg)</h4>
             <h2 class="hero-list_text">American Cookie</h2>
             <button type="button" class="hero-list_btn">BUY</button>
           </li>
           <li class="hero-list_item">
-            <img src="./images/hero-croissant.jpg" alt="v">
+            <!-- <img src="./images/hero-croissant.png" alt="croissant"> - background -->
             <h4 class="hero-list_h4">$4.00</h4>
             <h2 class="hero-list_text">Crushed with chocolate</h2>
             <button type="button" class="hero-list_btn">BUY</button>
           </li>
           <li class="hero-list_item">
-            <img src="./images/hero-pie.jpg" alt="pie">
+            <!-- <img src="./images/hero-pie.png" alt="pie"> - background -->
             <h4 class="hero-list_h4">For piece $4.00</h4>
             <h2 class="hero-list_text">Blackberry pie</h2>
             <button type="button" class="hero-list_btn">BUY</button>
@@ -108,36 +108,33 @@
         <ul class="quality-list">
           <li class="quality-list_item">
             <img src="./images/quality-bread.jpg" alt="quality-bread" />
-            <div class="quality-ingredients">
               <ol class="quality-ing_list">
                 <li class="quality-ing_item">Flour with fresh wheat</li>
                 <li class="quality-ing_item">New drozzhi</li>
                 <li class="quality-ing_item">Fresh eggs</li>
                 <li class="quality-ing_item">Water from the well</li>
               </ol>
-            </div>
+            
           </li>
           <li class="quality-list_item">
             <img src="./images/quality-cookies.jpg" alt="quality-cookies" />
-            <div class="quality-ingredients">
               <ol class="quality-ing_list">
-                <li class="quality-ing_item">Flour with fresh wheat</li>
+                <li class="quality-ing_item"><p>Flour with fresh wheat</p></li>
                 <li class="quality-ing_item">New drozzhi</li>
                 <li class="quality-ing_item">Fresh eggs</li>
                 <li class="quality-ing_item">Water from the well</li>
               </ol>
-            </div>
+            
           </li>
           <li class="quality-list_item">
             <img src="./images/quality-pie.jpg" alt="quality-pie" />
-            <div class="quality-ingredients">
               <ol class="quality-ing_list">
                 <li class="quality-ing_item">Flour with fresh wheat</li>
                 <li class="quality-ing_item">New drozzhi</li>
                 <li class="quality-ing_item">Fresh eggs</li>
                 <li class="quality-ing_item">Water from the well</li>
               </ol>
-            </div>
+            
           </li>
         </ul>
       </section>
@@ -145,7 +142,6 @@
         <h2 class="why-title">Why TRADITIONAL ARTISAX BAKERY?</h2>
         <ul class="why-list">
           <li class="why-list_item">
-            <!-- img не псевдо -->
             <img src="./images/home-order.svg" alt="home-order">
             <p class="why-list_text">Order at home</p>
           </li>
@@ -159,14 +155,11 @@
           </li>
         </ul>
       </section>
-    </main>
-
-    <footer class="footer">
       <section class="place">
-        <div class="where">
-          <h3 class="where-title">Where</h3>
+        <h3 class="where-title">Where</h3>
+        <div class="place-box">
           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d939.0672413799025!2d36.345168158608246!3d49.960631656516235!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x41270bb3e5689e81%3A0xebf122c73d20ce26!2sHeroiv%20Kharkova%20Ave%2C%20Kharkiv%2C%20Kharkivs&#39;ka%20oblast%2C%2061000!5e0!3m2!1sen!2sua!4v1706949182254!5m2!1sen!2sua" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div>
+        
         <div class="how">
           <h4 class="how-title">How</h4>
           <a href="tel:+380551231312">+38 055 123 13 12</a>
@@ -177,9 +170,12 @@
           <h4 class="when-title">When</h4>
           <p class="when-time">with 8:30 to 20:30</p>
         </div>
+        </div>
       </section>
+    </main>
 
-      <section class="foot">
+    <footer class="footer">
+      <div class="footer-box">
         <div class="foot-name">
           <h3 class="foot-name_title">TRADITIONAL ARTISAX BAKERY</h3>
           <p class="foot-name_text">We want to be healthy</p>
@@ -208,8 +204,8 @@
             <li class="company-item"><a href="#">Security</a></li>
           </ul>
         </div>
-      </section>
-
+      
+      </div>
       <p class="rights">@2022 Eatly.All right riserved.</p>
       
     </footer>
