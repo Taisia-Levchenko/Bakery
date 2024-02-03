@@ -19,19 +19,20 @@
   </head>
   <body class="body">
     <header class="header">
-          <nav class="navigation">
+          <div class="container"><nav class="navigation">
             <ul class="navigation-list">
-            <li class="navigation-list_item"><a href="#">About us</a></li>
-            <li class="navigation-list_item"><a href="#">Delivery</a></li>
-            <li class="navigation-list_item"><a href="#">Menu</a></li>
-            <li class="navigation-list_item"><a href="#">Contacts</a></li>
-            <li class="navigation-list_item"><a href="#">Reviews</a></li>
+            <li class="navigation-list_item"><a href="#" class="navigation-list_link">About us</a></li>
+            <li class="navigation-list_item"><a href="#" class="navigation-list_link">Delivery</a></li>
+            <li class="navigation-list_item"><a href="#" class="navigation-list_link">Menu</a></li>
+            <li class="navigation-list_item"><a href="#" class="navigation-list_link">Contacts</a></li>
+            <li class="navigation-list_item"><a href="#" class="navigation-list_link">Reviews</a></li>
           </ul>
           </nav>
+          </div>
         </header>
     <main class="main">
       <section class="hero">
-        <h1 class="hero-heading">TRADITIONAL ARTISAX BAKERY</h1>
+        <div class="container"><h1 class="hero-heading">TRADITIONAL ARTISAX BAKERY</h1>
         <p class="hero-text">
           Lorem Ipsum is simply dummy text of the printing and typesetting
           industry. Lorem Ipsum has been the industry's standard dummy text ever
@@ -43,141 +44,160 @@
         <button type="button" class="hero-button">SHOP NOW</button>
         <ul class="hero-list">
           <li class="hero-list_item">
-            <!-- <img src="./images/hero-cookie.png" alt="cookie"> - background-->
-            <h4 class="hero-list_h4">$8.00(kg)</h4>
+            <!-- <img src="./images/hero-cookie.png" alt="cookie" class="hero-list_img"> -->
+            <h4 class="hero-list_h4 it1">$8.00(kg)</h4>
             <h2 class="hero-list_text">American Cookie</h2>
             <button type="button" class="hero-list_btn">BUY</button>
           </li>
           <li class="hero-list_item">
-            <!-- <img src="./images/hero-croissant.png" alt="croissant"> - background -->
-            <h4 class="hero-list_h4">$4.00</h4>
-            <h2 class="hero-list_text">Crushed with chocolate</h2>
+            <!-- <img src="./images/hero-croissant.png" alt="croissant" class="hero-list_img"> -->
+            <h4 class="hero-list_h4 it2">$4.00</h4>
+            <h2 class="hero-list_text hero-one">Crushed with chocolate</h2>
             <button type="button" class="hero-list_btn">BUY</button>
           </li>
           <li class="hero-list_item">
-            <!-- <img src="./images/hero-pie.png" alt="pie"> - background -->
-            <h4 class="hero-list_h4">For piece $4.00</h4>
+            <!-- <img src="./images/hero-pie.png" alt="pie" class="hero-list_img"> -->
+            <h4 class="hero-list_h4 it3">For piece $4.00</h4>
             <h2 class="hero-list_text">Blackberry pie</h2>
             <button type="button" class="hero-list_btn">BUY</button>
           </li>
         </ul>
+        </div>
       </section>
       <section class="menu">
+        <div class="container">
         <h2 class="menu-heading">Menu</h2>
         <ul class="menu-list">
           <li class="menu-list_item">
-            <img
+            <div class="menu-list_div"><img
               src="./images/bread-menu.jpg"
               alt="bread"
               class="menu-list_img"
             />
             <h3 class="menu-list_title">Breads</h3>
+            </div>
             <button type="button" class="menu-list_btn">Order</button>
           </li>
+          
           <li class="menu-list_item">
-            <img
+            <div class="menu-list_div"><img
               src="./images/group-bakery.jpg"
               alt="group of baked goods"
               class="menu-list_img"
             />
             <h3 class="menu-list_title">Bakery</h3>
+            </div>
             <button type="button" class="menu-list_btn">Order</button>
           </li>
+          
           <li class="menu-list_item">
-            <img
+            <div class="menu-list_div"><img
               src="./images/group-cakes.jpg"
               alt="group of cakes and cupcakes"
               class="menu-list_img"
             />
             <h3 class="menu-list_title">Cakes & Cupcakes</h3>
+            </div>
             <button type="button" class="menu-list_btn">Order</button>
           </li>
+          
           <li class="menu-list_item">
-            <img
+            <div class="menu-list_div"><img
               src="./images/group-cookies.jpg"
               alt="group of cookies and pretzels"
               class="menu-list_img"
             />
             <h3 class="menu-list_title">Cookies & Pretzels</h3>
+            </div>
             <button type="button" class="menu-list_btn">Order</button>
           </li>
+          
         </ul>
+        </div>
       </section>
       <section class="quality">
+        <div class="container">
         <h2 class="quality-title">Quality of our bakery</h3>
         <ul class="quality-list">
           <li class="quality-list_item">
             <img src="./images/quality-bread.jpg" alt="quality-bread" />
-              <ol class="quality-ing_list">
-                <li class="quality-ing_item">Flour with fresh wheat</li>
-                <li class="quality-ing_item">New drozzhi</li>
-                <li class="quality-ing_item">Fresh eggs</li>
-                <li class="quality-ing_item">Water from the well</li>
-              </ol>
+              <div class="quality-div">
+                <p class="quality-div_text">1.Flour with fresh wheat<br>
+                  2.New drozzhi<br>
+                  3.Fresh eggs<br>
+                  4.Water from the well
+                </p>
+              </div>
             
           </li>
           <li class="quality-list_item">
             <img src="./images/quality-cookies.jpg" alt="quality-cookies" />
-              <ol class="quality-ing_list">
-                <li class="quality-ing_item"><p>Flour with fresh wheat</p></li>
-                <li class="quality-ing_item">New drozzhi</li>
-                <li class="quality-ing_item">Fresh eggs</li>
-                <li class="quality-ing_item">Water from the well</li>
-              </ol>
-            
+              <div class="quality-div">
+                <p class="quality-div_text">1.Flour with fresh wheat<br>
+                  2.New drozzhi<br>
+                  3.Fresh eggs<br>
+                  4.Water from the well
+                </p>
+              </div>
           </li>
           <li class="quality-list_item">
             <img src="./images/quality-pie.jpg" alt="quality-pie" />
-              <ol class="quality-ing_list">
-                <li class="quality-ing_item">Flour with fresh wheat</li>
-                <li class="quality-ing_item">New drozzhi</li>
-                <li class="quality-ing_item">Fresh eggs</li>
-                <li class="quality-ing_item">Water from the well</li>
-              </ol>
-            
+              <div class="quality-div">
+                <p class="quality-div_text">1.Flour with fresh wheat<br>
+                  2.New drozzhi<br>
+                  3.Fresh eggs<br>
+                  4.Water from the well
+                </p>
+              </div>
           </li>
         </ul>
+        </div>
       </section>
       <section class="why-us">
-        <h2 class="why-title">Why TRADITIONAL ARTISAX BAKERY?</h2>
+        <div class="container">
+        <h2 class="why-title">Why TRADITIONAL ARTISAX <br>BAKERY?</h2>
         <ul class="why-list">
           <li class="why-list_item">
-            <img src="./images/home-order.svg" alt="home-order">
+            <img src="./images/home-order.svg" alt="home-order" class="why-list_img">
             <p class="why-list_text">Order at home</p>
           </li>
           <li class="why-list_item">
-            <img src="./images/fresh.svg" alt="fresh">
+            <img src="./images/fresh.svg" alt="fresh" class="why-list_img">
             <p class="why-list_text">Fresh food</p>
           </li>
           <li class="why-list_item">
-            <img src="./images/calendar.svg" alt="calendar">
+            <img src="./images/calendar.svg" alt="calendar" class="why-list_img">
             <p class="why-list_text">Speed Delivery 24 h</p>
           </li>
         </ul>
+        </div>
       </section>
-      <section class="place">
+      <section class="where">
+        <div class="container">
         <h3 class="where-title">Where</h3>
-        <div class="place-box">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d939.0672413799025!2d36.345168158608246!3d49.960631656516235!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x41270bb3e5689e81%3A0xebf122c73d20ce26!2sHeroiv%20Kharkova%20Ave%2C%20Kharkiv%2C%20Kharkivs&#39;ka%20oblast%2C%2061000!5e0!3m2!1sen!2sua!4v1706949182254!5m2!1sen!2sua" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <div class="where-box">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d939.0672413799025!2d36.345168158608246!3d49.960631656516235!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x41270bb3e5689e81%3A0xebf122c73d20ce26!2sHeroiv%20Kharkova%20Ave%2C%20Kharkiv%2C%20Kharkivs&#39;ka%20oblast%2C%2061000!5e0!3m2!1sen!2sua!4v1706949182254!5m2!1sen!2sua" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="where-box-link"></iframe>
         
         <div class="how">
           <h4 class="how-title">How</h4>
-          <a href="tel:+380551231312">+38 055 123 13 12</a>
-          <p class="how-tiktok">Tik tok:@TR.Bakery</p>
-          <p class="how-inst">Inst:@TR.Bakery</p>
+          <a href="tel:+380551231312" class="how-link">+38 055 123 13 12</a>
+          <p class="how-tiktok">Tik tok:<a class="how-a">@TR.Bakery</a></p>
+          <p class="how-inst">Inst:<a class="how-a">@TR.Bakery</a></p>
         </div>
         <div class="when">
           <h4 class="when-title">When</h4>
-          <p class="when-time">with 8:30 to 20:30</p>
+          <p class="when-time">with 8:30 to <br>20:30</p>
+        </div>
         </div>
         </div>
       </section>
     </main>
 
     <footer class="footer">
+      <div class="container">
       <div class="footer-box">
         <div class="foot-name">
-          <h3 class="foot-name_title">TRADITIONAL ARTISAX BAKERY</h3>
+          <h3 class="foot-name_title">TRADITIONAL <br>ARTISAX BAKERY</h3>
           <p class="foot-name_text">We want to be healthy</p>
         </div>
         <div class="about">
@@ -206,6 +226,7 @@
         </div>
       
       </div>
+      </div> 
       <p class="rights">@2022 Eatly.All right riserved.</p>
       
     </footer>

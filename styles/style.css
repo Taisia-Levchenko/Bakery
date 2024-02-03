@@ -1,17 +1,246 @@
-/* body {
-    background-color:#202023;
-} */
+:root {
+    --text: #fff;
+    --main-button: #b47b48;
+    --hero-button: #c85312;
+    --background: #202023;
+    --bg-hero: #ebad51;
+    --quality: rgba(242, 242, 242, 0.3);
+}
 * {
     box-sizing: border-box;
     flex-wrap: wrap;
 }
+body {
+    background-color:var(--background);
+    color: var(--text);
+    line-height: normal;
+    font-family: 'Inter', sans-serif;
+    font-size: 24px;
+    font-weight: 300;
+    font-style: normal;
+} 
 ul, h1, h2, h3, h4, p, button, ol, iframe, a {
     margin: 0;
     padding: 0;
 }
 a {
     text-decoration: none;
+    color: var(--text);
+}
+a:hover {
+    color: var(--bg-hero);
 }
 ul {
     list-style-type: none;
+}
+.container {
+    max-width: 1230px;
+    margin: 0px auto;
+    /* outline: 2px solid red; */
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.header .container {
+    padding: 56px 0;
+}
+.navigation-list{
+    display: flex;
+    gap: 31px;
+}
+.navigation-list_link {
+    font-weight: 200;
+}
+.hero {
+    padding: 37px 0;
+}
+.hero-heading {
+    font-weight: 200;
+    font-size: 70px;
+    margin-bottom: 43px;
+}
+.hero-text {
+    font-size: 21px;
+    margin-bottom: 33px;
+}
+.hero-button {
+    border-radius: 17px;
+    padding: 21px 40px 18px 38px;
+    background-color: var(--main-button);
+    color: var(--text);
+    border: none;
+}
+.hero-list {
+    display: flex;
+    gap: 104px;
+}
+.hero-list_item {
+    margin-top: 125px;
+    width: 310px;
+}
+.hero-list_item:hover {
+    background-color: var(--bg-hero);
+}
+.hero-list_h4 {
+    font-weight: 200;
+    font-size: 24px;
+}
+.hero-list_text {
+    font-weight: 500;
+    font-size: 16px;
+}
+.hero-one {
+    font-size: 14px;
+}
+.hero-list_btn {
+    background-color: var(--hero-button);
+    font-weight: 900;
+    font-size: 16px;
+    padding: 10px 22px 5px;
+    color: var(--text);
+    border: none;
+}
+.hero-list_btn:hover {
+    padding: 3px 22px 12px 21px;
+}
+.menu {
+    padding: 37px 0 74px;
+}
+.menu-heading {
+    font-weight: 100;
+    font-size: 64px;
+    text-align: center;
+}
+.menu-list {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 199px;
+    align-items: center;
+    justify-content: center;
+    row-gap: 7px;
+}
+.menu-list_item {
+    text-align: center;
+}
+.menu-list_div {
+    border: 1px solid var(--text);
+    width: 328px;
+    text-align: center;
+    margin-bottom: 9px;
+}
+.menu-list_img {
+    width: 294px;
+    background-color: var(--background);
+}
+.menu-list_title {
+    font-weight: 800;
+    font-size: 25px;
+}
+.menu-list_btn {
+    font-weight: 800;
+    font-size: 25px;
+    border-radius: 17px;
+    background-color: var(--main-button);
+    padding: 3px 42px 7px;
+    color:var(--text);
+    border: none;
+}
+.quality {
+    padding: 90px 0 48px;
+}
+.quality-title {
+    font-family: 'Italiana', sans-serif;
+    font-weight: 400;
+    font-size: 64px;
+}
+.quality-div {
+    background-color: var(--quality);
+    width: 280px;
+    box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.25);
+    padding: 30px 0 49px 10px;
+}
+.quality-div_text {
+    font-weight: 500;
+    font-size: 24px;
+}
+.why-us {
+    padding: 50px 0 57px;
+    background: linear-gradient(89deg, #000 0%, rgba(3, 3, 3, 0) 100%), url(../images/why-bg.jpg);
+}
+.why-title {
+    font-family: 'Italiana', sans-serif;
+    font-weight: 400;
+    font-size: 48px;
+    margin-bottom: 120px;
+}
+.why-list {
+    display: flex;
+    gap:178px;
+    justify-content: center;
+    text-align: center;
+}
+.why-list_text {
+    font-weight: 700;
+    font-size: 24px;
+}
+.where {
+    padding: 60px 0 50px;
+}
+.where-box {
+    display: flex;
+}
+.where-title {
+    font-family: 'Italiana', sans-serif;
+    font-weight: 400;
+    font-size: 48px;
+    margin-bottom: 43px;
+}
+.how-title, .when-title {
+    font-weight: 400;
+    font-size: 40px;
+    margin-bottom: 47px;
+}
+.where-box-link {
+    margin-right: 133px;
+}
+.how {
+    margin-right: 35px;
+}
+.how-link {
+    
+}
+.how-tiktok {
+    margin-top: 64px;
+    margin-bottom: 36px;
+}
+.when-title {
+    text-align: center;
+}
+.when-time {
+    font-weight: 200;
+    font-size: 24px;
+    text-align: center;
+}
+.footer-box {
+    padding: 41px 0 85px;
+    display: flex;
+    gap: 142px;
+}
+.foot-name_title {
+    font-weight: 200;
+    font-size: 40px;
+    margin-top: 23px;
+    margin-bottom: 16px;
+}
+.foot-name_text {
+    font-size: 20px;
+}
+.about-title, .movement-title, .company-title {
+    margin-bottom: 41px;
+}
+.rights {
+    padding-bottom: 42px;
+    font-weight: 100;
+    font-size: 20px;
+    text-align: center;
 }
