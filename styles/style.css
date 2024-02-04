@@ -53,6 +53,7 @@ ul {
 }
 .hero {
     padding: 37px 0;
+    background: linear-gradient(89deg, #000 0%, rgba(3, 3, 3, 0) 60.64%), url(../images/hero-bg.jpg);
 }
 .hero-heading {
     font-weight: 200;
@@ -72,25 +73,55 @@ ul {
 }
 .hero-list {
     display: flex;
-    gap: 104px;
+    justify-content: space-between;
 }
 .hero-list_item {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
     margin-top: 125px;
-    width: 310px;
+    /* width: 310px;  */
+    /* height: 225px;  */
+    background-color: var(--background);
+    background-repeat: no-repeat;
+    background-position: left;
+    padding-bottom: 45px;
 }
 .hero-list_item:hover {
     background-color: var(--bg-hero);
 }
+.hero-list_item:first-child {
+    background-image: linear-gradient(81deg, #000 -110.34%, rgba(0, 0, 0, 0.00) 80.32%), url(../images/hero-cookie.png);
+    padding-left: 165px;
+    text-align: center;
+}
+.hero-list_item:nth-child(2) {
+    background-image: linear-gradient(81deg, #000 -110.34%, rgba(0, 0, 0, 0.00) 80.32%), url(../images/hero-croissant.png);
+    padding-left: 214px;
+    text-align: center;
+}
+.hero-list_item:last-child {
+    background-image: linear-gradient(81deg, #000 -110.34%, rgba(0, 0, 0, 0.00) 80.32%), url(../images/hero-pie.png);
+    padding-left: 185px;
+    text-align: center;
+}
 .hero-list_h4 {
     font-weight: 200;
-    font-size: 24px;
+    margin: 28px 18px 13px 27px;
+}
+.hero-list_h4:last-child {
+    margin-right: 20px;
 }
 .hero-list_text {
     font-weight: 500;
     font-size: 16px;
+    margin-right: 11px;
+    margin-bottom: 35px;
+    margin-left: 6px; 
 }
-.hero-one {
-    font-size: 14px;
+.hero-list_text:last-child {
+    margin-right: 9px;
 }
 .hero-list_btn {
     background-color: var(--hero-button);
@@ -101,7 +132,8 @@ ul {
     border: none;
 }
 .hero-list_btn:hover {
-    padding: 3px 22px 12px 21px;
+    background-color: var(--background);
+    color: var(--hero-button);
 }
 .menu {
     padding: 37px 0 74px;
@@ -147,11 +179,44 @@ ul {
 }
 .quality {
     padding: 90px 0 48px;
+    background-image: url(../images/quality-group.png);
+    background-repeat: no-repeat;
 }
+
 .quality-title {
     font-family: 'Italiana', sans-serif;
     font-weight: 400;
     font-size: 64px;
+    text-align: center;
+}
+
+.quality-list {
+    
+    display: flex;
+    align-items: center;
+}
+.one {
+    align-self: flex-start;
+    margin-right: 40px;
+}
+.two {
+    align-self: center;
+    margin-right: 91px;
+}
+.three {
+    align-self: flex-end;
+}
+.quality-img-one {
+    width: 355px;
+    height: 223px;
+}
+.quality-img-two {
+    width: 275px;
+    height: 284px;
+}
+.quality-img-three {
+    width: 334px;
+    height: 332px;
 }
 .quality-div {
     background-color: var(--quality);
