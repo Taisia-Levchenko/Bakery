@@ -86,8 +86,6 @@ ul {
     justify-content: flex-end;
     align-items: center;
     margin-top: 125px;
-    /* width: 310px;  */
-    /* height: 225px;  */
     background-color: var(--background);
     background-repeat: no-repeat;
     background-position: left;
