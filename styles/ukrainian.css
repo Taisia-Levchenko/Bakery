@@ -226,6 +226,10 @@ ul {
     color: var(--text);
     border: none;
 }
+.menu-list_btn:hover {
+    background-color: var(--bg-hero);
+    color:var(--background);
+}
 
 .quality {
     padding: 90px 0 48px;
