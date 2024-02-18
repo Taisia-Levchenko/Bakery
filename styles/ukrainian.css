@@ -102,6 +102,10 @@ ul {
     color: var(--text);
     border: none;
 }
+.hero-button:hover {
+    background-color: var(--bg-hero);
+    color: var(--background);
+}
 
 .hero-list {
     display: flex;

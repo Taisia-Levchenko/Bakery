@@ -81,6 +81,10 @@ ul {
     color: var(--text);
     border: none;
 }
+.hero-button:hover {
+    background-color: var(--bg-hero);
+    color: var(--background);
+}
 .hero-list {
     display: flex;
     justify-content: space-between;
@@ -185,6 +189,11 @@ ul {
     color:var(--text);
     border: none;
 }
+.menu-list_btn:hover {
+    background-color: var(--bg-hero);
+    color: var(--background);
+}
+
 .quality {
     padding: 90px 0 48px;
     background-image: url(../images/quality-group.png);
