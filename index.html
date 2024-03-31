@@ -45,7 +45,7 @@
           five centuries, <br>but also the leap into electronic typesetting,
           remaining <br>essentially unchanged.
         </p>
-        <button type="button" class="hero-button">SHOP NOW</button>
+        <button type="button" class="hero-button" data-open-modal>SHOP NOW</button>
         <ul class="hero-list">
           <li class="hero-list_item">
             <h4 class="hero-list_h4">$8.00(kg)</h4>
@@ -234,5 +234,25 @@
       <p class="rights">@2022 Eatly.All right riserved.</p>
       
     </footer>
+
+    <div class="backdrop is-hidden">
+      <form class="modal">
+        <div class="modal-text">
+          <h2 class="modal-title">TRADITIONAL ARTISAX BAKERY</h2>
+
+          <ul class="modal-list">
+            <li class="modal-list_item">
+              <input type="text" placeholder="Your adress" class="modal-input">
+            </li>
+            <li class="modal-list_item">
+              <input type="text" placeholder="Your card" class="modal-input">
+            </li>
+          </ul>
+          <button type="button" class="modal-button" data-close-modal>SHOP NOW</button>
+        </div>
+      </form>
+    </div>
+
+    <script src="./js/modal.js"></script>
   </body>
 </html>
